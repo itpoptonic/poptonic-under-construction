@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy & Legal Notice — POP TONIC S.L.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Privacy Policy, Terms of Service, Cookie Policy and Legal Notice for POP TONIC S.L."
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #020617;
+      --nav-bg: rgba(2, 6, 23, 0.96);
+      --border-subtle: rgba(148, 163, 184, 0.22);
+
+      --accent: #0ea5e9;
+      --accent-alt: #6366f1;
+
+      --text-main: #f9fafb;
+      --text-soft: #e5e7eb;
+      --text-muted: #94a3b8;
+
+      --max-width: 980px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrapper {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.6rem;
+    }
+
+    section {
+      padding: 3.5rem 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      letter-spacing: 0.02em;
+    }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+
+    h1.page-title {
+      font-size: 2.2rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .page-subtitle {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      max-width: 640px;
+      line-height: 1.8;
+      margin-bottom: 1.9rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 0.4rem;
+    }
+
+    h3 {
+      font-size: 1.02rem;
+      margin-top: 1.2rem;
+      margin-bottom: 0.1rem;
+    }
+
+    p {
+      margin-bottom: 0.7rem;
+      color: var(--text-soft);
+      font-size: 0.96rem;
+    }
+
+    ul {
+      margin: 0.3rem 0 0.9rem 1.2rem;
+      padding-left: 0;
+      color: var(--text-soft);
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    /* NAVBAR -------------------------------------------------- */
+
+    header.nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--nav-bg);
+      backdrop-filter: blur(22px);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+      transition:
+        transform 0.22s ease-out,
+        background 0.2s ease-out,
+        box-shadow 0.2s ease-out;
+    }
+
+    header.nav.nav-hidden-mobile {
+      transform: translateY(-100%);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.9rem 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.4rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      transition: transform 0.12s ease-out;
+    }
+
+    .brand:hover {
+      transform: translateY(-1px);
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      border: 1px solid rgba(148, 163, 184, 0.65);
+      background:
+        radial-gradient(circle at 30% 20%, #38bdf8 0, #0f172a 55%, #020617 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: 0.86rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .brand-text-main {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: 1.01rem;
+      font-weight: 600;
+    }
+
+    .brand-text-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      font-size: 0.93rem;
+    }
+
+    nav ul li a {
+      color: var(--text-muted);
+      position: relative;
+      padding-bottom: 0.22rem;
+      letter-spacing: 0.01em;
+      transition: color 0.16s ease-out;
+    }
+
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.18rem;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+      transition: width 0.18s ease-out;
+    }
+
+    nav ul li a:hover {
+      color: var(--text-soft);
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    /* INTRO -------------------------------------------------- */
+
+    #intro {
+      padding-top: 4.7rem;
+      padding-bottom: 2.8rem;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.8);
+      background:
+        radial-gradient(circle at top, #020617 0, #020617 50%, #020617 100%);
+    }
+
+    .intro-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .tag-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      padding: 0.28rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.7rem;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .chips-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.7rem;
+    }
+
+    .chip {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      color: var(--text-soft);
+      background: rgba(15, 23, 42, 0.9);
+      white-space: nowrap;
+    }
+
+    /* CONTENT CARDS -------------------------------------------------- */
+
+    .content-section {
+      border-bottom: 1px solid rgba(15, 23, 42, 0.8);
+    }
+
+    .card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      background: rgba(15, 23, 42, 0.97);
+      padding: 1.6rem 1.7rem;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.85);
+      margin-bottom: 2.4rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+      gap: 1.6rem;
+    }
+
+    .card:hover {
+      border-color: rgba(56, 189, 248, 0.45);
+      box-shadow: 0 20px 48px rgba(15, 23, 42, 0.95);
+    }
+
+    .mini-title {
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .legal-note {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 1rem;
+    }
+
+    /* FOOTER -------------------------------------------------- */
+
+    footer {
+      padding: 1.8rem 0 2.4rem;
+      font-size: 0.82rem;
+      color: #6b7280;
+      border-top: 1px solid rgba(15, 23, 42, 0.9);
+      margin-top: 1rem;
+    }
+
+    footer .wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      align-items: center;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 3px;
+    }
+
+    footer a:hover {
+      color: var(--text-soft);
+    }
+
+    /* COOKIE MODAL -------------------------------------------------- */
+
+    .cookie-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 23, 0.75);
+      backdrop-filter: blur(6px);
+      z-index: 99;
+      display: none;
+    }
+
+    .cookie-modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      max-width: 720px;
+      width: 90%;
+      padding: 2rem 2.2rem;
+      border-radius: 22px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background: radial-gradient(
+        circle at top left,
+        rgba(15, 23, 42, 0.98),
+        #020617
+      );
+      box-shadow: 0 25px 55px rgba(0, 0, 0, 0.65);
+      display: none;
+      animation: fadeUp 0.28s ease-out;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translate(-50%, -42%); }
+      to   { opacity: 1; transform: translate(-50%, -50%); }
+    }
+
+    .cookie-modal-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .cookie-modal-text {
+      font-size: 1rem;
+      color: var(--text-soft);
+      line-height: 1.8;
+    }
+
+    .cookie-modal-text a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .cookie-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 0.4rem;
+    }
+
+    .cookie-btn {
+      font-size: 0.85rem;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.65);
+      background: rgba(15, 23, 42, 0.95);
+      color: var(--text-soft);
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: 0.15s ease-out;
+    }
+
+    .cookie-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .cookie-btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+      color: #020617;
+      border-color: transparent;
+    }
+
+    .cookie-btn-primary:hover {
+      background: linear-gradient(135deg, var(--accent-alt), var(--accent));
+    }
+
+    /* RESPONSIVE -------------------------------------------------- */
+
+    @media (max-width: 800px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.7rem;
+        padding: 0.7rem 1.2rem 0.7rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+
+      .two-col {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      section {
+        padding: 3rem 0;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .cookie-modal {
+        padding: 1.6rem 1.4rem;
+        max-width: 92%;
+      }
+
+      .cookie-buttons {
+        flex-direction: column;
+      }
+
+      .cookie-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html#home" class="brand" aria-label="POP TONIC S.L. Home">
+        <div class="brand-mark">PT</div>
+        <div>
+          <div class="brand-text-main">POP TONIC S.L.</div>
+          <div class="brand-text-sub">Digital content, AI tools &amp; platforms</div>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section id="intro">
+    <div class="wrapper intro-inner">
+      <div class="tag-pill">
+        <span class="dot"></span>
+        <span>Privacy · Terms · Legal Notice</span>
+      </div>
+
+      <h1 class="page-title">Privacy Policy &amp; Legal Notice</h1>
+      <p class="page-subtitle">
+        POP TONIC S.L. (“we”, “us”, “our”) is committed to protecting your privacy
+        and ensuring transparent, responsible use of data. This page explains how we
+        collect and use personal data, how cookies are used on this website, and the
+        main terms that govern the use of our services.
+      </p>
+
+      <div class="chips-row">
+        <span class="chip">GDPR aligned</span>
+        <span class="chip">Digital services</span>
+        <span class="chip">AI tools</span>
+        <span class="chip">Educational content</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY POLICY -->
+  <section class="content-section" id="privacy">
+    <div class="wrapper">
+      <div class="card">
+        <div class="mini-title">Privacy</div>
+        <h2>Who We Are</h2>
+        <p>
+          POP TONIC S.L.<br />
+          Carrer Benet Cortada 55-59, Local 6<br />
+          08174 Sant Cugat del Vallès, Barcelona, Spain<br />
+          CIF: B19463819<br />
+          Email: <a href="mailto:Pop_Tonic_SL@protonmail.com">Pop_Tonic_SL@protonmail.com</a><br />
+          Website: <a href="https://itpoptonic.es" target="_blank" rel="noopener">https://itpoptonic.es</a>
+        </p>
+
+        <h2>Data We Collect</h2>
+        <p>We only collect data that is relevant to our services and operations.</p>
+        <ul>
+          <li><strong>Information you provide directly</strong> – such as name, email address, billing details, and payment information when you make a purchase or contact us.</li>
+          <li><strong>Automatically collected data</strong> – such as IP address, browser type, device information, and usage data through cookies and analytics tools.</li>
+          <li><strong>No data from minors</strong> – our services are aimed at adults. We do not knowingly collect personal data from minors. All accounts and purchases must be managed by users aged 18+.</li>
+        </ul>
+
+        <h2>How We Use Personal Data</h2>
+        <p>We use personal data for the following purposes:</p>
+        <ul>
+          <li>To provide access to digital content, products, and services you purchase.</li>
+          <li>To manage billing, payments, and customer accounts.</li>
+          <li>To communicate with you regarding updates, support, or important changes.</li>
+          <li>To understand how our website and products are used and improve our services.</li>
+          <li>To maintain security, prevent abuse, and comply with legal obligations.</li>
+        </ul>
+
+        <h2>Your Rights Under GDPR</h2>
+        <p>If you are located in the European Union or the European Economic Area, you have the following rights regarding your personal data:</p>
+        <ul>
+          <li>Right to access the personal data we hold about you.</li>
+          <li>Right to request correction of inaccurate or incomplete data.</li>
+          <li>Right to request deletion (“right to be forgotten”) in certain circumstances.</li>
+          <li>Right to restrict processing in specific situations.</li>
+          <li>Right to data portability where technically feasible.</li>
+          <li>Right to withdraw consent at any time, where processing is based on consent.</li>
+        </ul>
+        <p>
+          To exercise any of these rights, you can contact us at
+          <a href="mailto:Pop_Tonic_SL@protonmail.com">Pop_Tonic_SL@protonmail.com</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COOKIES -->
+  <section class="content-section" id="cookies">
+    <div class="wrapper">
+      <div class="card">
+        <div class="mini-title">Cookies</div>
+        <h2>Cookie Policy</h2>
+        <p>
+          We use cookies and similar technologies to ensure the basic functionality
+          of the website, improve user experience, and analyze traffic. Some cookies
+          are essential for the site to function, and others are used for analytics
+          or preferences.
+        </p>
+
+        <h3>Types of Cookies We May Use</h3>
+        <ul>
+          <li><strong>Essential cookies</strong> – required for the website to function (e.g. security, basic navigation).</li>
+          <li><strong>Preference cookies</strong> – remember your language or UI preferences.</li>
+          <li><strong>Analytics cookies</strong> – help us understand how visitors use the site so we can improve it.</li>
+          <li><strong>Embedded content cookies</strong> – set by third-party services when content such as videos or embedded tools is loaded.</li>
+        </ul>
+
+        <h3>Cookie Banner Text (Example)</h3>
+        <p>
+          <em>
+            “We use cookies to improve your experience and analyze traffic. You can
+            accept all cookies, reject non-essential cookies, or customize your
+            preferences.”
+          </em>
+        </p>
+        <p>
+          Buttons: <strong>[Accept All]</strong> · <strong>[Reject Non-Essential]</strong> ·
+          <strong>[Customize]</strong>
+        </p>
+
+        <h3>Managing Cookies</h3>
+        <p>
+          You can manage or disable cookies at any time through your browser
+          settings. If you reject certain cookies, some features of the website may
+          not work as expected.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TERMS OF SERVICE + REFUNDS -->
+  <section class="content-section" id="terms">
+    <div class="wrapper">
+      <div class="card">
+        <div class="mini-title">Terms</div>
+        <h2>Terms of Service</h2>
+
+        <h3>Eligibility</h3>
+        <p>
+          The website and services of POP TONIC S.L. are intended for users aged
+          18 and older. Any products designed for younger users (such as children
+          or teens) must be purchased and supervised by an adult.
+        </p>
+
+        <h3>Services Provided</h3>
+        <p>Our activity may include, among others:</p>
+        <ul>
+          <li>Digital content and downloadable products</li>
+          <li>AI-powered tools and assistants</li>
+          <li>Learning materials and educational resources</li>
+          <li>Creative templates and digital assets</li>
+          <li>Platform and website development services</li>
+        </ul>
+
+        <h3>Intellectual Property</h3>
+        <p>
+          All digital content, designs, templates, text, code, graphics, and
+          AI-generated materials provided through our services are the intellectual
+          property of POP TONIC S.L., unless otherwise stated. Any unauthorized
+          reproduction, redistribution, or resale is strictly prohibited.
+        </p>
+
+        <h3>Liability</h3>
+        <p>
+          Our services and digital products are provided “as is”, without any
+          express or implied warranty. To the maximum extent permitted by law, we
+          are not liable for indirect, incidental, or consequential damages arising
+          from the use or inability to use our services.
+        </p>
+
+        <h2 id="refunds">Refund &amp; Cancellation Policy</h2>
+        <p>
+          Most of our products are <strong>digital</strong> and are delivered
+          instantly. Once accessed or downloaded, they cannot be returned.
+        </p>
+        <p><strong>No refunds</strong> are provided for:</p>
+        <ul>
+          <li>Digital downloads and digital content</li>
+          <li>Access to AI tools and digital utilities</li>
+          <li>Platform development hours or services that have already been delivered</li>
+          <li>Custom-made or personalized materials</li>
+        </ul>
+        <p>
+          Refunds may be considered only in cases of duplicate payments or clear
+          service errors on our side. In such cases, please contact us with proof
+          of payment and a description of the issue.
+        </p>
+
+        <h3>Governing Law</h3>
+        <p>
+          These terms are governed by the laws of Spain. Any disputes arising in
+          connection with the website or our services will be subject to the
+          competent courts of Spain, unless mandatory law provides otherwise.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGE & SUPERVISION / ACCEPTABLE USE / AI USE -->
+  <section class="content-section" id="age-use">
+    <div class="wrapper">
+      <div class="card two-col">
+        <div>
+          <div class="mini-title">Age &amp; Supervision</div>
+          <h2>Age &amp; Supervision Policy</h2>
+          <p>
+            POP TONIC S.L. does not provide services directly to minors. All
+            purchases, accounts, and contractual relationships must be managed by
+            individuals aged 18 or older.
+          </p>
+          <p>
+            Educational or creative content designed for children or teens must
+            always be used under the supervision of a parent, legal guardian,
+            teacher, or other authorized adult.
+          </p>
+
+          <div style="height:1.4rem;"></div>
+
+          <div class="mini-title">Acceptable Use</div>
+          <h2>Acceptable Use Policy</h2>
+          <p>Users of our website, content, and tools agree not to:</p>
+          <ul>
+            <li>Misuse platform features or attempt to disrupt normal operation.</li>
+            <li>Upload, share, or generate harmful, abusive, or illegal content.</li>
+            <li>Copy, distribute, or resell content without authorization.</li>
+            <li>Use materials for unlawful purposes or in violation of third-party rights.</li>
+          </ul>
+          <p>
+            We reserve the right to limit or suspend access to our services in
+            case of misuse or violation of these conditions.
+          </p>
+        </div>
+
+        <div>
+          <div class="mini-title">AI Tools</div>
+          <h2>AI Responsible Use Policy</h2>
+          <p>
+            Some of our services may include AI-powered tools or features.
+            Users agree not to use these tools to generate or assist in generating:
+          </p>
+          <ul>
+            <li>Harmful, abusive, or harassing content.</li>
+            <li>Misleading or intentionally deceptive information.</li>
+            <li>Illegal or unsafe content.</li>
+            <li>Content involving minors in inappropriate or unsafe contexts.</li>
+          </ul>
+          <p>
+            AI outputs are provided for informational and creative support. Users
+            remain responsible for how they interpret, apply, and share these
+            outputs.
+          </p>
+
+          <div class="mini-title" style="margin-top:1.5rem;">Intellectual Property Notice</div>
+          <h3 style="margin-top:0.4rem;">Intellectual Property Notice</h3>
+          <p>
+            All digital content, designs, templates, text, code, and AI-generated
+            materials produced or delivered by POP TONIC S.L. are protected by
+            intellectual property rights. Unless explicitly authorized, you may
+            not reproduce, redistribute, or resell these materials.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGAL NOTICE / ACCESSIBILITY -->
+  <section class="content-section" id="legal">
+    <div class="wrapper">
+      <div class="card">
+        <div class="mini-title">Legal</div>
+        <h2>Legal Notice / Impressum</h2>
+        <p>
+          POP TONIC S.L.<br />
+          Carrer Benet Cortada 55-59, Local 6<br />
+          08174 Sant Cugat del Vallès, Barcelona, Spain<br />
+          CIF: B19463819<br />
+          Email: <a href="mailto:Pop_Tonic_SL@protonmail.com">Pop_Tonic_SL@protonmail.com</a>
+        </p>
+
+        <h2>Accessibility Statement</h2>
+        <p>
+          POP TONIC S.L. aims to create digital content and platforms that are
+          accessible to as many users as possible. We continuously work to improve
+          compatibility with modern devices, browsers, and assistive technologies.
+        </p>
+        <p>
+          If you encounter any accessibility barriers or issues when using our
+          website or digital content, please contact us so we can review and
+          address them where possible.
+        </p>
+
+        <p class="legal-note">
+          This page is intended as general information about our policies. It does
+          not replace individualized legal advice. For specific legal questions,
+          you should consult a qualified professional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrapper">
+      <div>© <span id="year"></span> POP TONIC S.L. All rights reserved.</div>
+      <div>Based in Spain · Digital content, AI tools &amp; platform solutions.</div>
+    </div>
+  </footer>
+
+  <!-- COOKIE CONSENT MODAL -->
+  <div class="cookie-overlay" id="cookie-overlay"></div>
+
+  <div class="cookie-modal" id="cookie-modal" aria-modal="true" role="dialog">
+    <div class="cookie-modal-inner">
+      <div class="cookie-modal-text">
+        We use cookies to ensure basic site functionality, improve your
+        experience, and analyze traffic. You can accept all cookies or reject
+        non-essential ones. Read more in our
+        <a href="#cookies">Privacy &amp; Cookie Policy</a>.
+      </div>
+
+      <div class="cookie-buttons">
+        <button class="cookie-btn cookie-btn-primary" data-consent="accept">
+          Accept All
+        </button>
+        <button class="cookie-btn" data-consent="reject">
+          Reject Non-Essential
+        </button>
+        <button class="cookie-btn" data-consent="custom">
+          Customize Later
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // YEAR
+      var yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      // COOKIE MODAL
+      var STORAGE_KEY = "pt_cookie_consent";
+
+      function getConsent() {
+        try {
+          return localStorage.getItem(STORAGE_KEY);
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function setConsent(value) {
+        try {
+          localStorage.setItem(STORAGE_KEY, value);
+        } catch (e) {}
+      }
+
+      function initCookieModal() {
+        var modal = document.getElementById("cookie-modal");
+        var overlay = document.getElementById("cookie-overlay");
+        if (!modal || !overlay) return;
+
+        if (getConsent()) {
+          modal.style.display = "none";
+          overlay.style.display = "none";
+          return;
+        }
+
+        modal.style.display = "block";
+        overlay.style.display = "block";
+
+        modal.addEventListener("click", function (e) {
+          var btn = e.target.closest("[data-consent]");
+          if (!btn) return;
+
+          var choice = btn.getAttribute("data-consent");
+          if (choice === "custom") {
+            choice = "reject_non_essential";
+          }
+
+          if (choice === "accept") {
+            setConsent("accept_all");
+          } else {
+            setConsent(choice || "reject_non_essential");
+          }
+
+          modal.style.display = "none";
+          overlay.style.display = "none";
+        });
+      }
+
+      // MOBILE NAV HIDE ON SCROLL
+      function initMobileNavHide() {
+        var nav = document.querySelector("header.nav");
+        if (!nav) return;
+
+        var lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll", function () {
+          var w = window.innerWidth || document.documentElement.clientWidth;
+          if (w > 720) {
+            nav.classList.remove("nav-hidden-mobile");
+            lastScrollY = window.scrollY;
+            return;
+          }
+
+          var currentY = window.scrollY;
+
+          if (currentY > lastScrollY && currentY > 80) {
+            nav.classList.add("nav-hidden-mobile");
+          } else {
+            nav.classList.remove("nav-hidden-mobile");
+          }
+
+          lastScrollY = currentY;
+        });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", function () {
+          initCookieModal();
+          initMobileNavHide();
+        });
+      } else {
+        initCookieModal();
+        initMobileNavHide();
+      }
+    })();
+  </script>
+</body>
+</html>
